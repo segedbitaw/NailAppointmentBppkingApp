@@ -1,0 +1,108 @@
+
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="25dp"
+android:background="@color/pink">
+
+<TextView
+    android:id="@+id/tvAdminTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Admin Dashboard"
+    android:textSize="16sp"
+    android:textColor="@color/black"
+    android:textStyle="bold"
+    android:gravity="center"
+    android:paddingBottom="16dp"/>
+
+<TextView
+    android:id="@+id/tvAdditionalInfo"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Swipe right to update. Swipe left to remove."
+    android:textSize="12sp"
+    android:gravity="center"
+    android:paddingTop="4dp" />
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/appointmentsRecyclerView"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="1"
+    android:layout_marginTop="20dp"
+    android:padding="8dp" />
+
+    <Button
+        android:id="@+id/btnAddAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/black"
+        android:text="Add Appointment"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

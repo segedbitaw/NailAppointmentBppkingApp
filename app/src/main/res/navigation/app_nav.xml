@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/splash_fragment">
+
+
+    <fragment
+        android:id="@+id/splash_fragment"
+        android:name="com.example.frontendfinalproject.fragments.SplashFragment"
+        android:label="fragment_splash_fragment"
+        tools:layout="@layout/fragment_splash_fragment">
+        <action
+            android:id="@+id/action_splash_fragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_splash_fragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.frontendfinalproject.fragments.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login">
+<!--        <action-->
+<!--            android:id="@+id/action_loginFragment_to_bookingFragment"-->
+<!--            app:destination="@id/bookingFragment" />-->
+        <action
+            android:id="@+id/action_loginFragment_to_adminDashboardFragment"
+            app:destination="@id/adminDashboardFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.frontendfinalproject.fragments.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/addAppointment"
+        android:name="com.example.frontendfinalproject.fragments.AddAppointment"
+        android:label="AddAppointment">
+        <action
+            android:id="@+id/action_addAppointment_to_adminDashboardFragment"
+            app:destination="@id/adminDashboardFragment"
+            app:popUpTo="@id/adminDashboardFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/adminDashboardFragment"
+        android:name="com.example.frontendfinalproject.fragments.AdminDashboardFragment"
+        android:label="AdminDashboardFragment">
+        <action
+            android:id="@+id/action_adminDashboardFragment_to_addAppointment"
+            app:destination="@id/addAppointment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.frontendfinalproject.fragments.HomeFragment"
+        android:label="HomeFragment" />
+
+</navigation>
